@@ -70,6 +70,8 @@ Create a directory '../Datasets' for the above two few-shot segmentation dataset
 
 Download the ImageNet pretrained backbones ([**resnet50**](https://drive.google.com/file/d/1Mq_6NXZKw5TUcpLQ8MuOK3KbQ_WeXmwr/view?usp=sharing), [**resnet101**](https://drive.google.com/file/d/1SJCDL1eu1ygYsdRESEDzTBJfqOp2MPe8/view?usp=sharing)) and put them into the `initmodel` directory
 
+Note: These ResNet backbones differ from the regular ResNets. To manage complexity, the feature map size is reduced to a fixed value (default 60x60xC) early in the network, and all subsequent feature maps maintain this size.
+
 ## Training
 > ### 1. PASCAL-5<sup>i</sup>
 > ```bash

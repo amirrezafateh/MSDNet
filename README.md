@@ -130,6 +130,7 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                --nshot {1, 5} 
 >                --load "path_to_trained_model"
 > ```
+Note: For the cross-domain task (COCO-20<sup>i</sup> -> PASCAL-5<sup>i</sup>), simply load the path of the model trained with the new_coco dataset.
 
 
 > ### 2. COCO-20<sup>i</sup>

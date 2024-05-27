@@ -97,7 +97,7 @@ Download the ImageNet pretrained ([**backbone-resnet50**](https://drive.google.c
 > ```
 
 > ### 3. Cross Domain COCO-20<sup>i</sup> to PASCAL-5<sup>i</sup>
-> Note: You should use the new_coco dataset, which excludes the classes present in PASCAL-5<sup>i</sup>. Refer to data/dataloader.py to switch from coco to new_coco.
+> Note: You should use the 'new_coco' dataset, which excludes the classes present in PASCAL-5<sup>i</sup>. Refer to 'data/dataloader.py' to switch from 'coco' to 'new_coco'.
 > ```bash
 > python train.py --layers {50, 101} 
 >                 --fold {0, 1, 2, 3} 

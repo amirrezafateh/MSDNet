@@ -96,6 +96,19 @@ Download the ImageNet pretrained ([**backbone-resnet50**](https://drive.google.c
 >                 --logpath "your_experiment_name"
 > ```
 
+> ### 3. Cross Domain COCO-20<sup>i</sup> to PASCAL-5<sup>i</sup>
+> Note: For this task, you should use the `new_coco` dataset, which excludes classes present in PASCAL-5<sup>i</sup>.
+> ```bash
+> python train.py --layers {50, 101} 
+>                 --fold {0, 1, 2, 3} 
+>                 --benchmark coco 
+>                 --lr 1e-3
+>                 --bsz 32
+>                 --niter 30
+>                 --shot {1, 5}
+>                 --logpath "your_experiment_name"
+> ```
+
 
 > ### Babysitting training:
 > Use tensorboard to babysit training progress:

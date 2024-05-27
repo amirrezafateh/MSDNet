@@ -126,5 +126,5 @@ Download the ImageNet pretrained ([**backbone-resnet50**](https://drive.google.c
 >                --load "path_to_trained_model"
 > ```
 
-
-This project is built upon HSNet:https://github.com/juhongm999/hsnet
+## Acknowledgements
+This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer

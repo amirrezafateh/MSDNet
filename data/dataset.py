@@ -2,7 +2,10 @@ r""" Dataloader builder for few-shot semantic segmentation dataset  """
 from torchvision import transforms
 from torch.utils.data import DataLoader
 from data.pascal import DatasetPASCAL
+# For cross-domain tasks, comment out the line below and uncomment the following line.
 from data.coco import DatasetCOCO
+# from data.new_coco import DatasetCOCO
+
 
 
 class FSSDataset:

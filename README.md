@@ -81,7 +81,7 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                 --lr 1e-3
 >                 --bsz 32
 >                 --niter 60
->                 --shot 1
+>                 --shot {1, 5}
 >                 --logpath "your_experiment_name"
 > ```
 

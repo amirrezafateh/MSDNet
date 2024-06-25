@@ -1,4 +1,4 @@
-r""" COCO-20i few-shot semantic segmentation dataset """
+r""" New_COCO-20i few-shot semantic segmentation dataset """
 import os
 import pickle
 
@@ -9,7 +9,7 @@ import PIL.Image as Image
 import numpy as np
 
 
-class DatasetCOCO(Dataset):
+class DatasetNewCOCO(Dataset):
     def __init__(self, datapath, fold, transform, split, shot, use_original_imgsize):
         self.split = 'val' if split in ['val', 'test'] else 'trn'
         self.fold = fold

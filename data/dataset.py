@@ -4,8 +4,8 @@ from torch.utils.data import DataLoader
 from data.pascal import DatasetPASCAL
 # For cross-domain tasks, comment out the line below and uncomment the following line.
 from data.coco import DatasetCOCO
+from data.new_coco import DatasetNewCOCO
 # from data.new_coco import DatasetCOCO
-
 
 
 class FSSDataset:
@@ -15,7 +15,8 @@ class FSSDataset:
 
         cls.datasets = {
             'pascal': DatasetPASCAL,
-            'coco': DatasetCOCO
+            'coco': DatasetCOCO,
+            'new_coco': DatasetNewCOCO
         }
 
         cls.img_mean = [0.485, 0.456, 0.406]

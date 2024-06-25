@@ -105,7 +105,7 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                 --benchmark new_coco 
 >                 --lr 1e-3
 >                 --bsz 32
->                 --niter 30
+>                 --niter 10
 >                 --shot {1, 5}
 >                 --logpath "your_experiment_name"
 > ```
@@ -129,7 +129,6 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                --nshot {1, 5} 
 >                --load "path_to_trained_model"
 > ```
-Note: For the cross-domain task (COCO-20<sup>i</sup> -> PASCAL-5<sup>i</sup>), simply load the path of the model trained with the new_coco dataset.
 
 
 > ### 2. COCO-20<sup>i</sup>
@@ -140,6 +139,16 @@ Note: For the cross-domain task (COCO-20<sup>i</sup> -> PASCAL-5<sup>i</sup>), s
 >                --nshot {1, 5} 
 >                --load "path_to_trained_model"
 > ```
+
+> ### 3. Cross Domain COCO-20<sup>i</sup> to PASCAL-5<sup>i</sup>
+> ```bash
+> python test.py --layers {50, 101} 
+>                --fold {0, 1, 2, 3} 
+>                --benchmark pascal
+>                --nshot {1, 5} 
+>                --load "path_to_trained_model_of_new"
+> ```
+
 
 ## Acknowledgements
 This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer

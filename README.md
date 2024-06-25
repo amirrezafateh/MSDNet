@@ -146,7 +146,7 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                --fold {0, 1, 2, 3} 
 >                --benchmark pascal
 >                --nshot {1, 5} 
->                --load "path_to_trained_model_of_new"
+>                --load "path_to_trained_model_of_new_coco"
 > ```
 
 

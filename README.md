@@ -5,9 +5,9 @@ This is the implementation of the paper "CDMDNet: Cross-Domain Multi-scale Decod
     <img src="data/assets/overview.png">
 </p>
 
-# Spatial Transformer Decoder
+### Spatial Transformer Decoder
 <p align="middle">
-    <img src="data/assets/overview.png">
+    <img src="data/assets/STD.png">
 </p>
 
 For more information, check out our paper on [[arXiv](...)].

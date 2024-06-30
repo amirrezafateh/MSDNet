@@ -4,6 +4,12 @@ This is the implementation of the paper "CDMDNet: Cross-Domain Multi-scale Decod
 <p align="middle">
     <img src="data/assets/overview.png">
 </p>
+
+# Spatial Transformer Decoder
+<p align="middle">
+    <img src="data/assets/overview.png">
+</p>
+
 For more information, check out our paper on [[arXiv](...)].
 
 ## Requirements

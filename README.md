@@ -2,12 +2,7 @@
 This is the implementation of the paper "CDMDNet: Cross-Domain Multi-scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping" by Fateh Amirreza, Mohammadi Mohammadreza, Jahed-Motlagh Mohammadreza.
 
 <p align="middle">
-    <img src="data/assets/overview.png">
-</p>
-
-### Spatial Transformer Decoder
-<p align="middle">
-    <img src="data/assets/STD.png">
+    <img src="data/assets/overview_git.png">
 </p>
 
 For more information, check out our paper on [[arXiv](...)].

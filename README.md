@@ -1,5 +1,5 @@
-## CDMDNet: Cross-Domain Multi-scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping
-This is the implementation of the paper "CDMDNet: Cross-Domain Multi-scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping" by Fateh Amirreza, Mohammadi Mohammadreza, Jahed-Motlagh Mohammadreza.
+## MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping
+This is the implementation of the paper "MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping" by Fateh Amirreza, Mohammadi Mohammadreza, Jahed-Motlagh Mohammadreza.
 
 <p align="middle">
     <img src="data/assets/overview_git.png">

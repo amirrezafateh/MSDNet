@@ -155,3 +155,16 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 
 ## Acknowledgements
 This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer
+
+## Citation
+If you use this repository in your work, please cite the following paper:
+```bibtex
+@misc{fateh2024msdnetmultiscaledecoderfewshot,
+      title={MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping}, 
+      author={Amirreza Fateh and Mohammad Reza Mohammadi and Mohammad Reza Jahed Motlagh},
+      year={2024},
+      eprint={2409.11316},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.11316}, 
+}

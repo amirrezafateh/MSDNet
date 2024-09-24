@@ -156,7 +156,9 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 
 Qualitative comparison of component effects on $COCO-20^i$ dataset in 1-shot scenario
 
-
+<p align="middle">
+    <img src="data/assets/exp.png">
+</p>
 
 ## Acknowledgements
 This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer

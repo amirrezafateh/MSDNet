@@ -152,6 +152,11 @@ Note: These ResNet backbones differ from the regular ResNets. To manage complexi
 >                --load "path_to_trained_model_of_new_coco"
 > ```
 
+## Compration 
+
+Qualitative comparison of component effects on $COCO-20^i$ dataset in 1-shot scenario
+
+
 
 ## Acknowledgements
 This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer

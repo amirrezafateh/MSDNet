@@ -19,9 +19,9 @@ def Weighted(supp_feat, mask):
     supp_feat = supp_feat * mask
     return supp_feat
 
-class CDMDNet(nn.Module):
+class MSDNet(nn.Module):
     def __init__(self, layers=50, shot=1, reduce_dim=64, criterion=WeightedDiceLoss()):
-        super(CDMDNet, self).__init__()
+        super(MSDNet, self).__init__()
         assert layers in [50, 101]
         #assert classes > 1 
         self.layers = layers
@@ -94,7 +94,8 @@ class CDMDNet(nn.Module):
         self.beta_conv = nn.ModuleList(self.beta_conv)
         self.res1 = nn.Sequential(
             nn.Conv2d(reduce_dim*len(self.pyramid_bins), reduce_dim, kernel_size=1, padding=0, bias=False)                         
-        )              
+        )    
+        '''          
         self.res3 = nn.Sequential(
             nn.Conv2d(reduce_dim*2, reduce_dim, kernel_size=3, padding=1, bias=False),
             nn.BatchNorm2d(reduce_dim),
@@ -165,7 +166,7 @@ class CDMDNet(nn.Module):
             nn.BatchNorm2d(reduce_dim),
             nn.ReLU(inplace=True)
         )
-        
+        '''
 
  
 
@@ -292,7 +293,7 @@ class CDMDNet(nn.Module):
         query_feat = torch.cat(pyramid_feat_list, 1)        
         query_feat = self.res1(query_feat)
         
-
+        '''
         cat = torch.cat((query_feat,supp_feat_mask_list_for_decoder[0]), dim =1)
 
         query_feat = self.res3(cat)
@@ -327,7 +328,7 @@ class CDMDNet(nn.Module):
 
         cat = torch.cat((query_feat,supp_feat_cat_240), dim =1)
         query_feat = torch.add(self.res7_2(cat), query_feat)
-    
+        '''
  
 
 

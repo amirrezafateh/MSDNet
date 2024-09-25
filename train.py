@@ -1,11 +1,12 @@
-r""" CDMDNet training (validation) code """
+r""" MSDNet training (validation) code """
 import argparse
 import os
 import torch.optim as optim
 import torch.nn as nn
+
 import torch
 
-from model.cdmd import CDMDNet
+from model.msd import MSDNet
 from common.logger import Logger, AverageMeter
 from common.evaluation import Evaluator
 from common import utils
@@ -13,7 +14,7 @@ from data.dataset import FSSDataset
 import time
 
 def train(epoch, model, dataloader, optimizer, training):
-    r""" Train CDMDNet """
+    r""" Train MSDNet """
 
     # Force randomness during training / freeze randomness during testing
     utils.fix_randseed(None) if training else utils.fix_randseed(0)
@@ -63,10 +64,10 @@ def train(epoch, model, dataloader, optimizer, training):
 if __name__ == '__main__':
 
     # Arguments parsing
-    parser = argparse.ArgumentParser(description='CDMDNet Pytorch Implementation')
+    parser = argparse.ArgumentParser(description='MSDNet Pytorch Implementation')
     parser.add_argument('--datapath', type=str, default='../../data')
-    parser.add_argument('--benchmark', type=str, default='coco', choices=['pascal', 'coco', 'fss'])
-    parser.add_argument('--logpath', type=str, default='log_CDMDNet_r50_coco0')
+    parser.add_argument('--benchmark', type=str, default='coco', choices=['pascal', 'coco', 'fss', 'new_coco'])
+    parser.add_argument('--logpath', type=str, default='log_MSDNet_r50_coco0')
     parser.add_argument('--bsz', type=int, default=32)
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--niter', type=int, default=30)
@@ -79,7 +80,7 @@ if __name__ == '__main__':
     Logger.initialize(args, training=True)
 
     # Model initialization
-    model = CDMDNet(layers=args.layers,shot=args.shot,reduce_dim=args.reduce_dim)
+    model = MSDNet(layers=args.layers,shot=args.shot,reduce_dim=args.reduce_dim)
     Logger.log_params(model)
     # Device setup
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

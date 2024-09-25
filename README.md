@@ -166,12 +166,9 @@ This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFo
 ## Citation
 If you use this repository in your work, please cite the following paper:
 ```bibtex
-@misc{fateh2024msdnetmultiscaledecoderfewshot,
-      title={MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping}, 
-      author={Amirreza Fateh and Mohammad Reza Mohammadi and Mohammad Reza Jahed Motlagh},
-      year={2024},
-      eprint={2409.11316},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.11316}, 
+@article{fateh2024msdnet,
+  title={MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping},
+  author={Fateh, Amirreza and Mohammadi, Mohammad Reza and Motlagh, Mohammad Reza Jahed},
+  journal={arXiv preprint arXiv:2409.11316},
+  year={2024}
 }

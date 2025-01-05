@@ -161,7 +161,7 @@ Qualitative comparison of component effects on $COCO-20^i$ dataset in 1-shot sce
 </p>
 
 ## Acknowledgements
-This project is built upon HSNet:https://github.com/juhongm999/hsnet and ProtoFormer:https://github.com/LeileiCao/ProtoFormer
+This project is built upon HSNet:https://github.com/juhongm999/hsnet 
 
 ## Citation
 If you use this repository in your work, please cite the following paper:

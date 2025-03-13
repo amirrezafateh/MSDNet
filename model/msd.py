@@ -94,7 +94,10 @@ class MSDNet(nn.Module):
         self.beta_conv = nn.ModuleList(self.beta_conv)
         self.res1 = nn.Sequential(
             nn.Conv2d(reduce_dim*len(self.pyramid_bins), reduce_dim, kernel_size=1, padding=0, bias=False)                         
-        )    
+        )
+        ############################################
+        # for multi scaling uncomment this section #
+        ############################################
         '''          
         self.res3 = nn.Sequential(
             nn.Conv2d(reduce_dim*2, reduce_dim, kernel_size=3, padding=1, bias=False),
@@ -292,7 +295,10 @@ class MSDNet(nn.Module):
         
         query_feat = torch.cat(pyramid_feat_list, 1)        
         query_feat = self.res1(query_feat)
-        
+
+        ############################################
+        # for multi scaling uncomment this section #
+        ############################################
         '''
         cat = torch.cat((query_feat,supp_feat_mask_list_for_decoder[0]), dim =1)
 

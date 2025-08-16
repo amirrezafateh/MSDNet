@@ -1,7 +1,9 @@
 ## MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping
-This is the implementation of the paper "MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping" by Fateh Amirreza, Mohammadi Mohammadreza, Jahed-Motlagh Mohammadreza.
+This is the official implementation of our paper "MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping" (accepted in Image and Vision Computing), by Fateh Amirreza, Mohammadi Mohammadreza, and Jahed-Motlagh Mohammadreza.
 
-For more information, check out our paper on [[arXiv](https://arxiv.org/abs/2409.11316)], [[paperswithcode](https://paperswithcode.com/paper/msdnet-multi-scale-decoder-for-few-shot)].
+[![arXiv](https://img.shields.io/badge/arXiv-2409.11316-b31b1b.svg)](https://arxiv.org/abs/2409.11316)
+[![Papers with Code](https://img.shields.io/badge/Papers%20with-Code-important)](https://paperswithcode.com/paper/msdnet-multi-scale-decoder-for-few-shot)
+[![Journal](https://img.shields.io/badge/Image%20and%20Vision%20Computing-Accepted-success)](https://www.sciencedirect.com/science/article/abs/pii/S0262885625002604)
 
 <p align="middle">
     <img src="data/assets/overview_git.png">

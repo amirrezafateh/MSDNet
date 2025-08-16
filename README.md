@@ -169,9 +169,11 @@ This project is built upon HSNet:https://github.com/juhongm999/hsnet
 ## Citation
 If you use this repository in your work, please cite the following paper:
 ```bibtex
-@article{fateh2024msdnet,
-  title={MSDNet: Multi-Scale Decoder for Few-Shot Semantic Segmentation via Transformer-Guided Prototyping},
+@article{fateh2025msdnet,
+  title={Msdnet: Multi-scale decoder for few-shot semantic segmentation via transformer-guided prototyping},
   author={Fateh, Amirreza and Mohammadi, Mohammad Reza and Motlagh, Mohammad Reza Jahed},
-  journal={arXiv preprint arXiv:2409.11316},
-  year={2024}
+  journal={Image and Vision Computing},
+  pages={105672},
+  year={2025},
+  publisher={Elsevier}
 }
